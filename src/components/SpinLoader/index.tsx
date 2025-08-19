@@ -1,7 +1,7 @@
 import clsx from "clsx";
 
 type SpinLoaderProps = {
-  className: string;
+  className?: string;
 };
 
 export const SpinLoader = ({ className = "" }: SpinLoaderProps) => {
