@@ -1,4 +1,5 @@
 import { Container } from "@/components/Container";
+import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
 import type { Metadata } from "next";
 
@@ -23,9 +24,7 @@ export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
         <Container>
           <Header />
           {children}
-          <footer>
-            <p className="py-8 text-center text-6xl font-bold">&copy; 2025</p>
-          </footer>
+          <Footer />
         </Container>
       </body>
     </html>
