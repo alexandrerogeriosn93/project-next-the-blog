@@ -16,6 +16,8 @@ export const SpinLoader = ({ className = "" }: SpinLoaderProps) => {
           "border-5",
           "border-slate-900",
           "border-t-transparent",
+          "dark:border-slate-100",
+          "dark:border-t-transparent",
         )}
       ></div>
     </div>
