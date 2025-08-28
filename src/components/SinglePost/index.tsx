@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import { PostDate } from "../PostDate";
 import { PostHeading } from "../PostHeading";
+import { SafeMarkdown } from "../SafeMarkdown";
 
 type SinglePostProps = {
   slug: string;
@@ -30,7 +31,7 @@ export async function SinglePost({ slug }: SinglePostProps) {
       <p className="mb-4 text-xl text-slate-600 dark:text-slate-400">
         {post.excerpt}
       </p>
-      <div>{post.content}</div>
+      <SafeMarkdown markdown={post.content} />
     </article>
   );
 }
