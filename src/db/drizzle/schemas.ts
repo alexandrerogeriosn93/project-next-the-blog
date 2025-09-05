@@ -9,9 +9,9 @@ export const postsTable = sqliteTable("posts", {
   excerpt: text("excerpt").notNull(),
   content: text("content").notNull(),
   coverImageUrl: text("cover_image_url").notNull(),
-  published: integer("publishe", { mode: "boolean" }).notNull(),
+  published: integer("published", { mode: "boolean" }).notNull(),
   createdAt: text("created_at").notNull(),
-  updated_at: text("updated_at").notNull(),
+  updatedAt: text("updated_at").notNull(),
 });
 
 export type PostsTableSelectMode = InferSelectModel<typeof postsTable>;
